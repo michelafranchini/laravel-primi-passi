@@ -8,5 +8,20 @@
     </head>
     <body>
         <h1>Hello world!</h1>
+        <div>
+            <h2>Studente</h2>
+            <div>
+                
+                <h3>{{$nome}}</h3>
+                <h3>{{$cognome}}</h3>
+                <h3>{{$età}}</h3>
+            </div>
+            <div>
+                <h2>SKILL</h2>
+                @foreach ($data as $value)
+                    <p>{{$value}}</p>
+                @endforeach
+            </div>
+        </div>
     </body>
 </html>

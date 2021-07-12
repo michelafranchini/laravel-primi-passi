@@ -16,3 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/', function () {
+    $array = [
+        'nome' => 'Michela', 
+        'cognome' => 'Franchini', 
+        'età' => '30'
+    ]; 
+
+    $skills = [
+        'data'=>['php', 
+                'css', 
+                'laravel',
+                'scss']
+    ]; 
+    return view('home', $array, $skills);
+});
+
+
